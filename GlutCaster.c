@@ -49,10 +49,10 @@ void drawMap2D()
 			yo = y*mapS;
 			
 			glBegin(GL_QUADS);
-			glVertex2i(xo,yo);
-			glVertex2i(xo,yo+mapS);
-			glVertex2i(xo+mapS,yo+mapS);
-			glVertex2i(xo+mapS,yo);
+			glVertex2i(xo+1,yo+1);
+			glVertex2i(xo+1,yo+mapS-1);
+			glVertex2i(xo+mapS-1,yo+mapS-1);
+			glVertex2i(xo+mapS-1,yo+1);
 			glEnd();
 			
 		}
